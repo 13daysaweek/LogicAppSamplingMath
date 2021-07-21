@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web.Http;
 using LogicAppSamplingMath.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
@@ -16,7 +15,7 @@ namespace LogicAppSamplingMath
 {
     public static class ComputeSampleSize
     {
-        [FunctionName("ComputeSapleSize")]
+        [FunctionName("ComputeSampleSize")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
